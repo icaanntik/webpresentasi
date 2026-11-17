@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentasi SIAKAD | SMA Negeri Musi Rawas</title>
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- AOS Animation CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Animate.css CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  <!-- CSS lokal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <a href="#beranda" class="brand">
+    <span class="brand-icon"><i class="bi bi-mortarboard-fill"></i></span>
+    <span>
+      <strong>SIAKAD</strong>
+      <small>SMA Negeri Musi Rawas</small>
+    </span>
+  </a>
+
+  <p class="sidebar-label">MENU PRESENTASI</p>
+
+  <nav class="side-nav">
+    <a href="#beranda" class="nav-link active"><i class="bi bi-house"></i> Beranda</a>
+    <a href="#latar-belakang" class="nav-link"><i class="bi bi-journal-text"></i> Latar Belakang</a>
+    <a href="#permasalahan" class="nav-link"><i class="bi bi-exclamation-circle"></i> Permasalahan</a>
+    <a href="#tujuan" class="nav-link"><i class="bi bi-bullseye"></i> Tujuan & Solusi</a>
+    <a href="#website-sekolah" class="nav-link"><i class="bi bi-globe"></i> Website Sekolah</a>
+    <a href="#fitur-siakad" class="nav-link"><i class="bi bi-grid"></i> Fitur SIAKAD</a>
+    <a href="#role-akses" class="nav-link"><i class="bi bi-people"></i> Role & Hak Akses</a>
+    <a href="#proses-bisnis" class="nav-link"><i class="bi bi-arrow-left-right"></i> Proses Bisnis</a>
+    <a href="#alur-sistem" class="nav-link"><i class="bi bi-signpost-split"></i> Alur Sistem</a>
+    <a href="#wireframe" class="nav-link"><i class="bi bi-easel"></i> Wireframe</a>
+    <a href="#diagram-uml" class="nav-link"><i class="bi bi-diagram-3"></i> Diagram UML</a>
+    <a href="#arsitektur" class="nav-link"><i class="bi bi-diagram-2"></i> Arsitektur</a>
+    <a href="#teknologi" class="nav-link"><i class="bi bi-code-slash"></i> Teknologi</a>
+    <a href="#struktur-folder" class="nav-link"><i class="bi bi-folder"></i> Struktur Folder</a>
+    <a href="#pengembangan" class="nav-link"><i class="bi bi-rocket"></i> Pengembangan</a>
+    <a href="#penutup" class="nav-link"><i class="bi bi-check-circle"></i> Penutup</a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <span class="online-dot"></span>
+    Dokumentasi Proyek SIAKAD
+  </div>
+</aside>
+
+<!-- KONTEN UTAMA -->
+<main class="main-content">
+
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div>
+      <small>PROYEK SISTEM INFORMASI</small>
+      <strong>Presentasi SIAKAD</strong>
+    </div>
+
+    <span class="school-chip">
+      <i class="bi bi-mortarboard"></i>
+      SMA Negeri Musi Rawas
+    </span>
+  </header>
+
+  <!-- BERANDA -->
+  <section class="hero-section page-section" id="beranda">
+    <div class="hero-content" data-aos="fade-right">
+      <span class="eyebrow">SISTEM INFORMASI SEKOLAH</span>
+
+      <h1>
+        Sistem Informasi<br>
+        <span>Akademik</span> (SIAKAD)
+      </h1>
+
+      <p>
+        Website informasi sekolah dan aplikasi akademik untuk mendukung
+        penyampaian informasi serta pengelolaan data kehadiran siswa
+        di SMA Negeri Musi Rawas.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#latar-belakang" class="btn-main">
+          Jelajahi Presentasi <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#fitur-siakad" class="btn-link">Lihat Fitur Sistem</a>
+      </div>
+
+      <div class="hero-info">
+        <span><i class="bi bi-window"></i> Berbasis Web</span>
+        <span><i class="bi bi-shield-check"></i> Autentikasi Pengguna</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-aos="zoom-in">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+
+      <div class="hero-card floating">
+        <div class="hero-card-icon">
+          <i class="bi bi-mortarboard-fill"></i>
+        </div>
+        <span class="live-label">SISTEM AKADEMIK</span>
+        <h2>SIAKAD</h2>
+        <p>SMA Negeri Musi Rawas</p>
+        <hr>
+
+        <div class="hero-feature">
+          <i class="bi bi-person-check"></i>
+          <span>Login Pengguna</span>
+          <b>01</b>
+        </div>
+
+        <div class="hero-feature">
+          <i class="bi bi-calendar-check"></i>
+          <span>Data Kehadiran</span>
+          <b>02</b>
+        </div>
+
+        <div class="hero-feature">
+          <i class="bi bi-bar-chart"></i>
+          <span>Ringkasan Data</span>
+          <b>03</b>
+        </div>
+      </div>
+
+      <div class="floating-label label-one">
+        <i class="bi bi-shield-lock"></i> Authentication
+      </div>
+
+      <div class="floating-label label-two">
+        <i class="bi bi-database"></i> Data Absensi
+      </div>
+    </div>
+  </section>
+
+  <!-- LATAR BELAKANG -->
+  <section class="page-section" id="latar-belakang">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">01 / PENDAHULUAN</span>
+      <h2>Latar Belakang</h2>
+      <p>Alasan dan konteks pengembangan website informasi sekolah dan aplikasi SIAKAD.</p>
+    </div>
+
+    <div class="two-column">
+      <article class="content-card" data-aos="fade-up">
+        <div class="icon-box purple"><i class="bi bi-building"></i></div>
+        <h3>Digitalisasi Informasi Sekolah</h3>
+        <p>
+          Website sekolah menjadi media untuk menyampaikan profil,
+          visi dan misi, fasilitas, berita, pengumuman, informasi lomba,
+          serta kontak sekolah kepada masyarakat.
+        </p>
+        <p>
+          Aplikasi SIAKAD melengkapi layanan tersebut dengan fitur
+          autentikasi, dashboard, dan pencatatan data kehadiran siswa.
+        </p>
+      </article>
+
+      <article class="content-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Ruang Lingkup Sistem</h3>
+
+        <div class="scope-item">
+          <b>01</b>
+          <div><strong>Website Publik</strong><small>Informasi sekolah untuk pengunjung.</small></div>
+        </div>
+
+        <div class="scope-item">
+          <b>02</b>
+          <div><strong>Aplikasi SIAKAD</strong><small>Login dan dashboard pengguna.</small></div>
+        </div>
+
+        <div class="scope-item">
+          <b>03</b>
+          <div><strong>Pengelolaan Absensi</strong><small>Pencatatan data kehadiran siswa.</small></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PERMASALAHAN -->
+  <section class="page-section soft-section" id="permasalahan">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">02 / ANALISIS</span>
+      <h2>Identifikasi Permasalahan</h2>
+      <p>Hal-hal yang menjadi perhatian dalam penyampaian informasi dan pencatatan akademik.</p>
+    </div>
+
+    <div class="card-grid four-grid">
+      <article class="info-card" data-aos="zoom-in">
+        <div class="icon-box coral"><i class="bi bi-file-earmark-text"></i></div>
+        <h3>Pengelolaan Data</h3>
+        <p>Pencatatan manual membutuhkan waktu dan ketelitian lebih.</p>
+      </article>
+
+      <article class="info-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box blue"><i class="bi bi-search"></i></div>
+        <h3>Pencarian Informasi</h3>
+        <p>Informasi sekolah perlu disusun dalam satu media yang mudah diakses.</p>
+      </article>
+
+      <article class="info-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box amber"><i class="bi bi-clipboard-data"></i></div>
+        <h3>Rekap Kehadiran</h3>
+        <p>Data kehadiran perlu dicatat dan dirangkum agar mudah dipantau.</p>
+      </article>
+
+      <article class="info-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box green"><i class="bi bi-megaphone"></i></div>
+        <h3>Penyampaian Informasi</h3>
+        <p>Berita dan pengumuman membutuhkan media publikasi yang mudah ditemukan.</p>
+      </article>
+    </div>
+
+    <div class="notice">
+      <i class="bi bi-info-circle"></i>
+      Bagian ini menjelaskan kebutuhan yang hendak didukung sistem,
+      bukan hasil audit resmi terhadap proses sekolah.
+    </div>
+  </section>
+
+  <!-- TUJUAN DAN SOLUSI -->
+  <section class="page-section" id="tujuan">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">03 / SOLUSI</span>
+      <h2>Tujuan dan Solusi Sistem</h2>
+      <p>Solusi digital yang disediakan melalui website sekolah dan aplikasi SIAKAD.</p>
+    </div>
+
+    <div class="solution-layout">
+      <div class="solution-main" data-aos="fade-right">
+        <i class="bi bi-laptop"></i>
+        <span>SOLUSI UTAMA</span>
+        <h3>Informasi dan layanan akademik dalam media berbasis web.</h3>
+        <p>
+          Website publik menyajikan informasi sekolah. Aplikasi SIAKAD
+          menyediakan autentikasi pengguna, dashboard, dan fitur
+          pencatatan absensi.
+        </p>
+      </div>
+
+      <div class="solution-list" data-aos="fade-left">
+        <div><i class="bi bi-check-circle-fill"></i> Menyediakan informasi sekolah melalui website.</div>
+        <div><i class="bi bi-check-circle-fill"></i> Menggunakan autentikasi untuk masuk ke aplikasi.</div>
+        <div><i class="bi bi-check-circle-fill"></i> Menampilkan ringkasan statistik kehadiran.</div>
+        <div><i class="bi bi-check-circle-fill"></i> Mencatat dan mengelola data absensi siswa.</div>
+        <div><i class="bi bi-check-circle-fill"></i> Menyediakan ekspor data absensi ke CSV.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEBSITE SEKOLAH -->
+  <section class="page-section soft-section" id="website-sekolah">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">04 / WEBSITE PUBLIK</span>
+      <h2>Website Sekolah</h2>
+      <p>Media publikasi informasi dan profil SMA Negeri Musi Rawas.</p>
+    </div>
+
+    <div class="browser-preview" data-aos="fade-up">
+      <div class="browser-bar">
+        <span></span><span></span><span></span>
+        <div>www.smanegeri-musi-rawas.sch.id</div>
+      </div>
+
+      <div class="school-preview">
+        <div class="school-nav">
+          <strong><i class="bi bi-mortarboard-fill"></i> SMA NEGERI MUSI RAWAS</strong>
+          <span>Beranda &nbsp; Profil &nbsp; Berita &nbsp; Kontak</span>
+        </div>
+
+        <div class="school-hero">
+          <div>
+            <small>SELAMAT DATANG DI WEBSITE SEKOLAH</small>
+            <h3>Membangun Generasi<br>Berprestasi dan Berkarakter</h3>
+            <p>Informasi dan layanan sekolah dalam satu website.</p>
+            <a href="#fitur-siakad">Jelajahi Website</a>
+          </div>
+          <i class="bi bi-mortarboard-fill school-big-icon"></i>
+        </div>
+
+        <div class="school-shortcuts">
+          <div><i class="bi bi-building"></i><b>Profil Sekolah</b></div>
+          <div><i class="bi bi-bullseye"></i><b>Visi & Misi</b></div>
+          <div><i class="bi bi-newspaper"></i><b>Berita</b></div>
+          <div><i class="bi bi-megaphone"></i><b>Pengumuman</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-grid four-grid website-features">
+      <article class="mini-card"><i class="bi bi-house"></i><b>Beranda</b><small>Halaman utama website.</small></article>
+      <article class="mini-card"><i class="bi bi-building"></i><b>Profil</b><small>Identitas sekolah.</small></article>
+      <article class="mini-card"><i class="bi bi-bullseye"></i><b>Visi Misi</b><small>Arah dan tujuan sekolah.</small></article>
+      <article class="mini-card"><i class="bi bi-building-check"></i><b>Fasilitas</b><small>Informasi sarana sekolah.</small></article>
+      <article class="mini-card"><i class="bi bi-newspaper"></i><b>Berita</b><small>Publikasi kegiatan sekolah.</small></article>
+      <article class="mini-card"><i class="bi bi-megaphone"></i><b>Pengumuman</b><small>Informasi sekolah.</small></article>
+      <article class="mini-card"><i class="bi bi-trophy"></i><b>Lomba</b><small>Informasi perlombaan.</small></article>
+      <article class="mini-card"><i class="bi bi-telephone"></i><b>Kontak</b><small>Informasi kontak sekolah.</small></article>
+    </div>
+  </section>
+
+  <!-- FITUR SIAKAD -->
+  <section class="page-section" id="fitur-siakad">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">05 / FITUR APLIKASI</span>
+      <h2>Fitur Aplikasi SIAKAD</h2>
+      <p>Fitur berdasarkan aplikasi SIAKAD yang menjadi acuan presentasi.</p>
+    </div>
+
+    <div class="card-grid three-grid">
+      <article class="feature-card" data-aos="fade-up">
+        <div class="icon-box purple"><i class="bi bi-person-lock"></i></div>
+        <h3>Login Pengguna</h3>
+        <p>Autentikasi email dan password menggunakan Supabase Auth.</p>
+        <span class="tag">Supabase Authentication</span>
+      </article>
+
+      <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon-box blue"><i class="bi bi-speedometer2"></i></div>
+        <h3>Dashboard</h3>
+        <p>Menampilkan email pengguna, statistik kehadiran, dan catatan terbaru.</p>
+        <span class="tag">Ringkasan Informasi</span>
+      </article>
+
+      <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon-box green"><i class="bi bi-calendar-check"></i></div>
+        <h3>Data Absensi</h3>
+        <p>Mencatat nama, NISN, kelas, tanggal, dan status kehadiran siswa.</p>
+        <span class="tag">LocalStorage</span>
+      </article>
+
+      <article class="feature-card" data-aos="fade-up">
+        <div class="icon-box amber"><i class="bi bi-filetype-csv"></i></div>
+        <h3>Ekspor CSV</h3>
+        <p>Mengunduh data absensi dalam format CSV.</p>
+        <span class="tag">Unduh Data</span>
+      </article>
+
+      <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon-box pink"><i class="bi bi-info-circle"></i></div>
+        <h3>Informasi Sistem</h3>
+        <p>Menampilkan informasi mengenai aplikasi dan sistem yang digunakan.</p>
+        <span class="tag">Informasi Aplikasi</span>
+      </article>
+
+      <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon-box dark"><i class="bi bi-box-arrow-right"></i></div>
+        <h3>Logout</h3>
+        <p>Mengakhiri sesi pengguna melalui fungsi signOut Supabase Auth.</p>
+        <span class="tag">Manajemen Sesi</span>
+      </article>
+    </div>
+
+    <div class="notice warning">
+      <i class="bi bi-exclamation-triangle"></i>
+      <span><b>Catatan implementasi:</b> data absensi aplikasi acuan disimpan di LocalStorage browser dengan key <code>absensiSMA</code>, bukan di database Supabase.</span>
+    </div>
+  </section>
+
+  <!-- ROLE DAN HAK AKSES -->
+  <section class="page-section soft-section" id="role-akses">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">06 / PENGGUNA SISTEM</span>
+      <h2>Role dan Hak Akses</h2>
+      <p>Rancangan pembagian hak akses berdasarkan peran pengguna.</p>
+    </div>
+
+    <div class="role-grid">
+      <article class="role-card admin" data-aos="flip-up">
+        <div class="role-title"><i class="bi bi-person-gear"></i><div><h3>Administrator</h3><small>Pengelola sistem</small></div></div>
+        <ul>
+          <li>Login ke sistem</li>
+          <li>Mengelola data siswa dan guru</li>
+          <li>Mengelola kelas dan mata pelajaran</li>
+          <li>Mengelola data absensi</li>
+          <li>Melihat laporan dan rekapitulasi</li>
+          <li>Mengelola informasi sistem</li>
+        </ul>
+      </article>
+
+      <article class="role-card student" data-aos="flip-up" data-aos-delay="100">
+        <div class="role-title"><i class="bi bi-person"></i><div><h3>Siswa</h3><small>Pengguna layanan akademik</small></div></div>
+        <ul>
+          <li>Login ke sistem</li>
+          <li>Melihat profil pribadi</li>
+          <li>Melihat jadwal pelajaran</li>
+          <li>Melihat informasi akademik</li>
+          <li>Melihat informasi kehadiran</li>
+        </ul>
+      </article>
+
+      <article class="role-card teacher" data-aos="flip-up">
+        <div class="role-title"><i class="bi bi-person-video3"></i><div><h3>Guru</h3><small>Pengelola pembelajaran</small></div></div>
+        <ul>
+          <li>Login ke sistem</li>
+          <li>Melihat jadwal mengajar</li>
+          <li>Melihat data kelas</li>
+          <li>Mengelola absensi siswa</li>
+          <li>Mengelola nilai siswa</li>
+          <li>Melihat informasi akademik</li>
+        </ul>
+      </article>
+
+      <article class="role-card parent" data-aos="flip-up" data-aos-delay="100">
+        <div class="role-title"><i class="bi bi-people"></i><div><h3>Wali Murid</h3><small>Pemantau perkembangan siswa</small></div></div>
+        <ul>
+          <li>Login ke sistem</li>
+          <li>Melihat profil anak</li>
+          <li>Melihat informasi akademik anak</li>
+          <li>Memantau kehadiran anak</li>
+          <li>Melihat perkembangan belajar</li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 class="table-title">Matriks Hak Akses</h3>
+
+    <div class="table-responsive matrix-wrap">
+      <table class="table access-matrix">
+        <thead>
+          <tr><th>Fungsi</th><th>Admin</th><th>Siswa</th><th>Guru</th><th>Wali Murid</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Login</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Kelola data siswa</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Kelola data guru</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Melihat jadwal</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+          <tr><td>Kelola absensi</td><td>✓</td><td>—</td><td>✓</td><td>—</td></tr>
+          <tr><td>Melihat kehadiran</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Kelola nilai</td><td>✓</td><td>—</td><td>✓</td><td>—</td></tr>
+          <tr><td>Melihat nilai</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Ekspor laporan</td><td>✓</td><td>—</td><td>✓</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="table-note">
+      ✓ = memiliki hak akses · — = tidak memiliki hak akses.
+      Role di atas merupakan rancangan konseptual, bukan klaim bahwa seluruh role
+      sudah diterapkan pada aplikasi saat ini.
+    </p>
+  </section>
+
+  <!-- PROSES BISNIS -->
+  <section class="page-section" id="proses-bisnis">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">07 / PROSES BISNIS</span>
+      <h2>Proses Bisnis Sistem</h2>
+      <p>Aktivitas umum dari pengguna mengakses sistem sampai mengakhiri sesi.</p>
+    </div>
+
+    <div class="business-flow">
+      <article><span>01</span><i class="bi bi-globe"></i><h3>Akses Website</h3><p>Pengguna membuka website sekolah.</p></article>
+      <i class="bi bi-arrow-right flow-arrow"></i>
+      <article><span>02</span><i class="bi bi-person-lock"></i><h3>Autentikasi</h3><p>Pengguna memasukkan akun.</p></article>
+      <i class="bi bi-arrow-right flow-arrow"></i>
+      <article><span>03</span><i class="bi bi-speedometer2"></i><h3>Dashboard</h3><p>Sistem menampilkan halaman aplikasi.</p></article>
+      <i class="bi bi-arrow-right flow-arrow"></i>
+      <article><span>04</span><i class="bi bi-clipboard-check"></i><h3>Aktivitas</h3><p>Pengguna melihat atau mengelola data.</p></article>
+      <i class="bi bi-arrow-right flow-arrow"></i>
+      <article><span>05</span><i class="bi bi-box-arrow-right"></i><h3>Logout</h3><p>Pengguna mengakhiri sesi.</p></article>
+    </div>
+  </section>
+
+  <!-- ALUR SISTEM -->
+  <section class="page-section soft-section" id="alur-sistem">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">08 / ALUR APLIKASI</span>
+      <h2>Alur Kerja Sistem</h2>
+      <p>Alur login, validasi, penggunaan dashboard, dan logout.</p>
+    </div>
+
+    <div class="flowchart" data-aos="zoom-in">
+      <div class="flow-node terminal">MULAI</div>
+      <i class="bi bi-arrow-down"></i>
+      <div class="flow-node">Buka aplikasi SIAKAD</div>
+      <i class="bi bi-arrow-down"></i>
+      <div class="flow-node">Masukkan email dan password</div>
+      <i class="bi bi-arrow-down"></i>
+      <div class="decision">Login valid?</div>
+
+      <div class="flow-branches">
+        <div class="branch error">
+          <b>TIDAK</b>
+          <i class="bi bi-arrow-down"></i>
+          <div class="flow-node">Tampilkan pesan gagal</div>
+          <small>Ulangi proses login</small>
+        </div>
+
+        <div class="branch success">
+          <b>YA</b>
+          <i class="bi bi-arrow-down"></i>
+          <div class="flow-node">Masuk ke dashboard</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="flow-node">Pilih menu aplikasi</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="flow-node">Kelola / lihat data absensi</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="flow-node">Logout</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="flow-node terminal">SELESAI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIREFRAME -->
+  <section class="page-section" id="wireframe">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">09 / DESAIN ANTARMUKA</span>
+      <h2>Wireframe Aplikasi</h2>
+      <p>Gambaran rancangan antarmuka halaman utama aplikasi.</p>
+    </div>
+
+    <div class="wire-tabs">
+      <button class="wire-tab active" data-panel="wire-login">Login</button>
+      <button class="wire-tab" data-panel="wire-dashboard">Dashboard</button>
+      <button class="wire-tab" data-panel="wire-absensi">Data Absensi</button>
+      <button class="wire-tab" data-panel="wire-website">Website</button>
+    </div>
+
+    <div class="wire-panel active" id="wire-login">
+      <div class="mock-login">
+        <div class="mock-logo"><i class="bi bi-mortarboard-fill"></i></div>
+        <h3>Login SIAKAD</h3>
+        <p>Silakan masuk ke akun Anda</p>
+        <label>Email</label><div class="mock-input">Masukkan email</div>
+        <label>Password</label><div class="mock-input">Masukkan password</div>
+        <div class="mock-button">MASUK</div>
+      </div>
+    </div>
+
+    <div class="wire-panel" id="wire-dashboard">
+      <div class="mock-dashboard">
+        <aside><b>SIAKAD</b><span>Dashboard</span><span>Data Absensi</span><span>Informasi</span></aside>
+        <div class="mock-dash-content">
+          <h3>Dashboard</h3>
+          <p>Selamat datang di aplikasi SIAKAD</p>
+          <div class="mock-stats">
+            <div>Hadir<strong>120</strong></div>
+            <div>Izin<strong>5</strong></div>
+            <div>Sakit<strong>3</strong></div>
+            <div>Alpa<strong>2</strong></div>
+          </div>
+          <div class="mock-table">Data absensi terbaru</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wire-panel" id="wire-absensi">
+      <div class="mock-absence">
+        <h3>Data Absensi Siswa</h3>
+        <div class="mock-input">Nama siswa</div>
+        <div class="mock-input">NISN</div>
+        <div class="mock-input">Kelas</div>
+        <div class="mock-input">Tanggal dan status kehadiran</div>
+        <div class="mock-button">SIMPAN DATA</div>
+        <div class="mock-table">Tabel data absensi siswa</div>
+      </div>
+    </div>
+
+    <div class="wire-panel" id="wire-website">
+      <div class="mock-website">
+        <h3>Website SMA Negeri Musi Rawas</h3>
+        <p>Beranda | Profil | Visi Misi | Fasilitas | Berita | Kontak</p>
+        <div class="mock-website-hero">Selamat Datang di Website Sekolah</div>
+        <div class="mock-stats"><div>Profil</div><div>Berita</div><div>Informasi</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGRAM UML -->
+  <section class="page-section soft-section" id="diagram-uml">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">10 / PEMODELAN SISTEM</span>
+      <h2>Diagram UML</h2>
+      <p>Gambaran interaksi aktor, aktivitas, dan struktur komponen sistem.</p>
+    </div>
+
+    <div class="diagram-grid">
+      <article class="diagram-card" data-aos="fade-up">
+        <h3><i class="bi bi-diagram-3"></i> Use Case Diagram</h3>
+        <p>Hubungan aktor dengan fungsi sistem.</p>
+        <div class="usecase">
+          <div class="actors">
+            <span>👤 Admin</span><span>👤 Siswa</span><span>👤 Guru</span><span>👤 Wali Murid</span>
+          </div>
+          <div class="usecase-system">
+            <b>SISTEM SIAKAD</b>
+            <span>Login</span><span>Melihat Dashboard</span><span>Mengelola Absensi</span><span>Melihat Laporan</span><span>Logout</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="diagram-card" data-aos="fade-up">
+        <h3><i class="bi bi-arrow-repeat"></i> Activity Diagram</h3>
+        <p>Alur aktivitas login pengguna.</p>
+        <div class="activity-diagram">
+          <div class="activity-node start">Mulai</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="activity-node">Buka halaman login</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="activity-node">Masukkan akun</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="activity-node decision-node">Validasi akun</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="activity-node">Dashboard / Pesan gagal</div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="activity-node end">Selesai</div>
+        </div>
+      </article>
+
+      <article class="diagram-card" data-aos="fade-up">
+        <h3><i class="bi bi-boxes"></i> Class Diagram</h3>
+        <p>Contoh rancangan entitas secara konseptual.</p>
+        <div class="class-diagram">
+          <div class="uml-class"><b>Pengguna</b><hr>idPengguna<br>email<br>password<hr>login()<br>logout()</div>
+          <div class="uml-class"><b>Siswa</b><hr>nisn<br>nama<br>kelas<hr>lihatAbsensi()</div>
+          <div class="uml-class"><b>Absensi</b><hr>idAbsensi<br>tanggal<br>status<hr>simpan()<br>hapus()</div>
+        </div>
+      </article>
+
+      <article class="diagram-card" data-aos="fade-up">
+        <h3><i class="bi bi-puzzle"></i> Component Diagram</h3>
+        <p>Pembagian komponen utama aplikasi.</p>
+        <div class="component-diagram">
+          <div>Pengguna</div>
+          <i class="bi bi-arrow-down"></i>
+          <div>Frontend Website<br><small>HTML · CSS · JavaScript</small></div>
+          <i class="bi bi-arrow-down"></i>
+          <div class="component-bottom">
+            <span>Supabase Auth</span>
+            <span>LocalStorage Absensi</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="diagram-card" data-aos="fade-up">
+        <h3><i class="bi bi-cloud"></i> Deployment Diagram</h3>
+        <p>Penempatan komponen pada perangkat pengguna dan layanan cloud.</p>
+        <div class="deployment">
+          <div><i class="bi bi-laptop"></i><b>Client Device</b><small>Browser, HTML, CSS, JavaScript, LocalStorage</small></div>
+          <i class="bi bi-arrow-left-right"></i>
+          <div><i class="bi bi-cloud-check"></i><b>Cloud Service</b><small>Supabase Authentication dan sesi pengguna</small></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="notice">
+      Diagram UML di atas merupakan pemodelan konseptual. Fitur dan role yang belum tersedia pada aplikasi saat ini bukan berarti sudah diimplementasikan.
+    </div>
+  </section>
+
+  <!-- ARSITEKTUR -->
+  <section class="page-section" id="arsitektur">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">11 / ARSITEKTUR</span>
+      <h2>Arsitektur Sistem</h2>
+      <p>Hubungan pengguna, antarmuka aplikasi, layanan autentikasi, dan penyimpanan absensi.</p>
+    </div>
+
+    <div class="architecture" data-aos="zoom-in">
+      <div class="architecture-box user"><i class="bi bi-people-fill"></i><b>Pengguna</b><small>Pengelola aplikasi</small></div>
+      <i class="bi bi-arrow-down"></i>
+      <div class="architecture-box frontend"><i class="bi bi-window-stack"></i><b>Frontend SIAKAD</b><small>HTML · CSS · JavaScript</small></div>
+      <i class="bi bi-arrow-down"></i>
+      <div class="architecture-branches">
+        <div><i class="bi bi-arrow-down"></i><div class="architecture-box auth"><i class="bi bi-shield-lock"></i><b>Supabase Auth</b><small>Login · Session · Logout</small></div></div>
+        <div><i class="bi bi-arrow-down"></i><div class="architecture-box storage"><i class="bi bi-database"></i><b>LocalStorage</b><small>Data absensi browser</small></div></div>
+      </div>
+    </div>
+
+    <div class="notice warning">
+      Supabase pada aplikasi acuan digunakan untuk autentikasi. Data absensi disimpan secara lokal di browser dengan key <code>absensiSMA</code>.
+    </div>
+  </section>
+
+  <!-- TEKNOLOGI -->
+  <section class="page-section soft-section" id="teknologi">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">12 / TEKNOLOGI</span>
+      <h2>Teknologi yang Digunakan</h2>
+      <p>Teknologi utama untuk membangun antarmuka dan fungsi aplikasi.</p>
+    </div>
+
+    <div class="card-grid three-grid">
+      <article class="technology-card"><i class="bi bi-filetype-html"></i><h3>HTML5</h3><p>Menyusun struktur halaman website.</p></article>
+      <article class="technology-card"><i class="bi bi-filetype-css"></i><h3>CSS3</h3><p>Mengatur warna, tata letak, dan tampilan.</p></article>
+      <article class="technology-card"><i class="bi bi-filetype-js"></i><h3>JavaScript</h3><p>Mengatur interaksi dan proses aplikasi.</p></article>
+      <article class="technology-card"><i class="bi bi-bootstrap"></i><h3>Bootstrap</h3><p>Membantu komponen dan tata letak responsif.</p></article>
+      <article class="technology-card"><i class="bi bi-database"></i><h3>LocalStorage</h3><p>Menyimpan data absensi pada browser.</p></article>
+      <article class="technology-card"><i class="bi bi-shield-lock"></i><h3>Supabase Auth</h3><p>Mengelola autentikasi dan sesi pengguna.</p></article>
+    </div>
+
+    <div class="cdn-box">
+      <h3>CDN Website Presentasi</h3>
+      <p>Bootstrap 5.3.3 · Bootstrap Icons 1.11.3 · Google Fonts · AOS 2.3.4 · Animate.css 4.1.1 · Vanilla Tilt 1.8.1</p>
+    </div>
+  </section>
+
+  <!-- STRUKTUR FOLDER -->
+  <section class="page-section" id="struktur-folder">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">13 / ORGANISASI FILE</span>
+      <h2>Struktur Folder Proyek</h2>
+      <p>Folder aplikasi SIAKAD dan folder presentasi dibuat terpisah.</p>
+    </div>
+
+    <div class="folder-grid">
+      <article class="folder-card">
+        <h3><i class="bi bi-folder-fill"></i> Folder Web SIAKAD</h3>
+        <pre>web-siakad/
+├── index.html
+├── siakad.html
+├── absensi.html
+├── script.js
+├── style.css
+└── image/</pre>
+        <p>Aplikasi utama sekolah.</p>
+      </article>
+
+      <article class="folder-card">
+        <h3><i class="bi bi-folder-fill"></i> Folder Presentasi</h3>
+        <pre>presentasi-siakad/
+├── index.html
+├── style.css
+└── script.js</pre>
+        <p>Website dokumentasi dan presentasi proyek.</p>
+      </article>
+    </div>
+
+    <div class="notice">
+      Simpan ketiga file presentasi dalam satu folder. Folder aplikasi SIAKAD tetap terpisah dan tidak perlu diubah.
+    </div>
+  </section>
+
+  <!-- PENGEMBANGAN -->
+  <section class="page-section soft-section" id="pengembangan">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-kicker">14 / PENGEMBANGAN LANJUTAN</span>
+      <h2>Rekomendasi Pengembangan</h2>
+      <p>Hal-hal yang dapat dipertimbangkan apabila sistem dikembangkan lebih lanjut.</p>
+    </div>
+
+    <div class="roadmap">
+      <article><span>01</span><div><h3>Database Terpusat</h3><p>Memindahkan penyimpanan absensi dari LocalStorage ke database agar dapat diakses lintas perangkat.</p></div><b>Pengembangan</b></article>
+      <article><span>02</span><div><h3>Role-Based Access Control</h3><p>Menerapkan hak akses Admin, Siswa, Guru, dan Wali Murid secara nyata.</p></div><b>Pengembangan</b></article>
+      <article><span>03</span><div><h3>Modul Akademik</h3><p>Menambahkan modul siswa, guru, kelas, jadwal, nilai, dan laporan apabila dibutuhkan.</p></div><b>Pengembangan</b></article>
+      <article><span>04</span><div><h3>Keamanan dan Backup</h3><p>Menerapkan validasi, kebijakan akses data, pencadangan, dan pengujian keamanan.</p></div><b>Pengembangan</b></article>
+    </div>
+  </section>
+
+  <!-- PENUTUP -->
+  <section class="closing-section page-section" id="penutup">
+    <div class="closing-icon"><i class="bi bi-mortarboard-fill"></i></div>
+    <span class="section-kicker">PENUTUP PRESENTASI</span>
+    <h2>Terima Kasih</h2>
+    <p>
+      Demikian presentasi Sistem Informasi Akademik (SIAKAD)
+      SMA Negeri Musi Rawas. Semoga website dan aplikasi ini dapat
+      mendukung penyampaian informasi sekolah serta pengelolaan
+      data kehadiran siswa.
+    </p>
+    <a href="#beranda" class="btn-main"><i class="bi bi-arrow-up"></i> Kembali ke Beranda</a>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="currentYear"></span> Presentasi SIAKAD · SMA Negeri Musi Rawas</span>
+    <span>Dokumentasi Proyek</span>
+  </footer>
+
+</main>
+
+<!-- CDN JAVASCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JAVASCRIPT LOKAL -->
+<script src="script.js"></script>
+
+</body>
+</html>
